@@ -4,9 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>本地深度自驾租车 Demo</title>
-    <script type="module" src="/src/main.jsx"></script>
+    <style>
+      body {
+        margin: 0;
+        background: #f5efe3;
+        color: #1f2937;
+        font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+      }
+
+      .boot-fallback {
+        max-width: 32rem;
+        margin: 10vh auto;
+        padding: 1rem 1.25rem;
+        line-height: 1.6;
+      }
+
+      .boot-fallback strong {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-size: 1.05rem;
+      }
+    </style>
+    <script type="module" src="./src/main.jsx"></script>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div class="boot-fallback">
+        <strong>页面正在加载</strong>
+        如果这个提示一直不消失，通常不是页面内容为空，而是 GitHub Pages 发布了源码而不是 Vite
+        构建产物。请在仓库 `Settings -> Pages` 中把 `Source` 设为 `GitHub Actions`。
+      </div>
+    </div>
   </body>
 </html>
